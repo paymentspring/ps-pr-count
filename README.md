@@ -5,7 +5,7 @@ This is a small node utility to help us generate PR counts.
 ## Setup
 
 0. Open up the terminal
-1. If you don't have [homebrew]() installed, install it:
+1. If you don't have [homebrew](https://brew.sh/) installed, install it:
     * `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 2. If you don't have node installed, install it:
     * `brew install node`
