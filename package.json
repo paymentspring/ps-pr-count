@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@octokit/rest": "^16.16.5",
+    "collect.js": "^4.6.2",
+    "minimist": "^1.2.0"
+  }
+}
