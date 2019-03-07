@@ -4,7 +4,7 @@ const collect = require('collect.js');
 
 const args = minimist(process.argv.slice(2))
 
-const puts = (s) => console.log(s);
+const puts = console.log;
 
 var octokit = new Octokit({ auth() {return `token ${args.k}`}});
 var query = octokit.search.issuesAndPullRequests({q: "is:open+is:pr+archived:false+user:paymentspring+-label:blocked+-label:WIP"});
