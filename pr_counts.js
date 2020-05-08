@@ -7,7 +7,7 @@ const args = minimist(process.argv.slice(2))
 const puts = console.log;
 
 var octokit = new Octokit({ auth() {return `token ${args.k}`}});
-var query = octokit.search.issuesAndPullRequests({q: "is:open+is:pr+archived:false+user:paymentspring+-label:blocked+-label:WIP"});
+var query = octokit.search.issuesAndPullRequests({q: "is:open+is:pr+archived:false+draft:false+user:paymentspring+-label:blocked+-label:WIP"});
 
 // a bit sloppy, but build up the output object as we go
 var output = {};
